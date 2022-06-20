@@ -1,0 +1,33 @@
+.alphabet {
+  overflow: auto;
+  max-height: calc(100vh - 67px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  &Char {
+    display: flex;
+    border: 1px solid #3AB0FF;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    flex-direction: column;
+
+    &Value {
+      font-size: 36px;
+    }
+
+    &Transcription {
+      font-size: 24px;
+    }
+
+    &:last-child {
+      // margin-bottom: 120px;
+    }
+  }
+}
